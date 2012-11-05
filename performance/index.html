@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Performance</title>
+	<link href="../content/jquery.mobile-1.1.1.min.css" rel="stylesheet" type="text/css" />
+	<script src="../libs/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script src="../libs/jquery.mobile-1.1.1.min.js" type="text/javascript"></script>
+	<style type="text/css">
+		.myChart {
+			width:  500px;
+			height: 500px;
+		}
+	</style>
+</head>
+<body>
+	<div id="pageBarChart" data-role="page" data-rockncoder-jspage="manageBarChart">
+		<header data-role="header" data-position="fixed">
+			<h1>Performance Testing</h1>
+		</header>
+        <section style="padding: 8px;">
+            <div class="ui-grid-a">
+                <!-- left column -->
+                <div class="ui-block-a">
+                    <div id="barChart" class="myChart" style="margin: 8px;"></div><br/><br/>
+                </div>
+                <!-- right column -->
+                <div class="ui-block-b">
+                    <ul data-role="listview">
+                        <li><button id="refreshBarChart" value="Global vs. Local Demo" data-mini="true"></button></li>
+                        <li><button id="refreshBarChart1" value="For Loop Demo" data-mini="true"></button></li>
+                        <li><button id="refreshBarChart1b" value="For-In Demo" data-mini="true"></button></li>
+                        <li><button id="refreshBarChart2" value="Properties Demo" data-mini="true"></button></li>
+                        <li><button id="refreshBarChart3" value="Styles Demo" data-mini="true"></button></li>
+                        <li><button id="refreshBarChart4" value="jQuery Demo" data-mini="true"></button></li>
+                        <li><button id="refreshBarChart5" value="DOM Access Demo" data-mini="true"></button></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="styleMe">Hello</div>
+		</section>
+	</div>
+	<script src="jquery.jqplot.min.js" type="text/javascript"></script>
+	<script src="jqplot.barRenderer.min.js" type="text/javascript"></script>
+	<script src="jqplot.categoryAxisRenderer.min.js" type="text/javascript"></script>
+	<script src="app.js" type="text/javascript"></script>
+</body>
+</html>
