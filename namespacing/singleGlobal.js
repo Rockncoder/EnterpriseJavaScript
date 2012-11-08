@@ -6,7 +6,14 @@
 
 
 var myApp = (function () {
-    return {
+    var bob = function(msg) {
+        alert(msg);
+    };
+    var pete = function(msg) {
+        alert("pete says: "+msg);
+    };
 
+    return {
+        callBob: bob
     };
 })();
